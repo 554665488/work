@@ -23,7 +23,7 @@ class consume_time{
 		
 		
 	}*/
-	public function test(){//变量函数
+	public function test(){//????????
 		$time=microtime(true);
 		foreach($this->arr as $key=>$val){
 			// echo $val."\n";
@@ -44,16 +44,16 @@ $obj=new consume_time('a','b','c');
 function a(){};
 function b(){};
 function c(){};
-//echo microtime();//0.14491000 1472448437 true ???????????  ?? ??????????
-echo microtime(true);// 1472448452.1648  //??????true ?????? ???????????
+//echo microtime();//0.14491000 1472448437 true 微妙数  和  秒数 两部分 expload
+echo microtime(true);// 1472448452.1648  //如果有true 参数 返回的是一个部分
 $timeparts = explode(' ',microtime()); 
 var_dump($timeparts);
 
 /*
 
-//var_dump(range(1,20));//得到1到20为键值的索引数组
+//var_dump(range(1,20));//返回一个1到20 为键值的数组
 //$arr=range(1,20);
-//shuffle($arr);//洗牌  成功true 失败 false
+//shuffle($arr);//将数组打乱洗牌
 //var_dump($arr);
 
 
