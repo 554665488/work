@@ -1,26 +1,34 @@
-<?php
+ï»¿<?php
 
-//Éè¼Æ´ËÖÖ±àÂëÊÇÎªÁËÊ¹¶þ½øÖÆÊý¾Ý¿ÉÒÔÍ¨¹ý·Ç´¿8-bitµÄ´«Êä²ã´«Êä ÀýÈçµç×ÓÓÊ¼þµÄÖ÷Ìâ
-//±àÂëºóµÄÊý¾Ý²»Ô­Ê¼Êý¾Ý¶àÕ¼ÓÃ33%×óÓÒµÄ¿Õ¼ä
-
+//è®¾è®¡æ­¤ç§ç¼–ç æ˜¯ä¸ºäº†ä½¿äºŒè¿›åˆ¶æ•°æ®å¯ä»¥é€šè¿‡éžçº¯8-bitçš„ä¼ è¾“å±‚ä¼ è¾“ ä¾‹å¦‚ç”µå­é‚®ä»¶çš„ä¸»é¢˜
+//ç¼–ç åŽçš„æ•°æ®ä¸åŽŸå§‹æ•°æ®å¤šå ç”¨33%å·¦å³çš„ç©ºé—´
+$arr=explode(".", '15546688.jpg');
+array_pop($arr);
+//var_dump($arr);
+echo $basenames=basename('sssss.kpg','.kpg');;
+echo realpath(__DIR__) . PHP_EOL;
+$real_path = realpath("./qq");//è¿”å›žå½“å‰æ–‡ä»¶æ‰€åœ¨ç»å¯¹è·¯å¾„
+var_dump($real_path);
+exit;
 $str='name';
 //echo $encode_after=base64_encode($str);
-//echo base64_decode($encode_after);//·´±àÂë
+//echo base64_decode($encode_after);//åç¼–ç 
 
-//½«Êý×é·Ö¸ôÎªÖ¸¶¨²ÎÊýµÄÉñÊý×é
+//å°†æ•°ç»„åˆ†éš”ä¸ºæŒ‡å®šå‚æ•°çš„ç¥žæ•°ç»„
 $arr=range(0,20);
-//var_dump(array_chunk($arr,10,true));//µÚÈý¸ö²ÎÊý¿ÉÑ¡Ä¬ÈÏÎªfalse Îªtrue²»»á¸Ä±äÊý×éµÄ¼üÃû
-//joinÊÇimplodeµÄ±ðÃû
+//var_dump(array_chunk($arr,10,true));//ç¬¬ä¸‰ä¸ªå‚æ•°å¯é€‰é»˜è®¤ä¸ºfalse ä¸ºtrueä¸ä¼šæ”¹å˜æ•°ç»„çš„é”®å
+//joinæ˜¯implodeçš„åˆ«å
 $arr = array('Hello','World!','I','love','Shanghai!');
 //echo join(' ',$arr);
 echo implode(' ',$arr);
 
-//½«×Ö·û´®·Ö¸î×é³Épreg_splitÕýÔò·Ö¸î×Ö·û´®ÎªÊý×é    str_split ÖÆ¶¨³¤¶È·Ö¸î×Ö·û´®ÎªÊý×é
+//å°†å­—ç¬¦ä¸²åˆ†å‰²ç»„æˆpreg_splitæ­£åˆ™åˆ†å‰²å­—ç¬¦ä¸²ä¸ºæ•°ç»„    str_split åˆ¶å®šé•¿åº¦åˆ†å‰²å­—ç¬¦ä¸²ä¸ºæ•°ç»„
 $str='hell';
-$aar=str_split($str,'1');
+$aar=str_split($str,'1');//è¿”å›žçš„æ•°ç»„
 var_dump($aar);
-//½«×Ö·û´®·Ö¸ô³É¶à¸ö²¿·Ö
+//å°†å­—ç¬¦ä¸²åˆ†éš”æˆå¤šä¸ªéƒ¨åˆ†
 
 $str = "aassss";
 
-echo chunk_split($str,2)."\n";//Yar? m ki lo ? ay, yar? m ki lo ? eker  ÈâÌ«¶à  ·Ö¸î
+echo chunk_split($str,2)."\n";//Yar? m ki lo ? ay, yar? m ki lo ? eker  è‚‰å¤ªå¤š  åˆ†å‰²
+

@@ -44,16 +44,16 @@ $obj=new consume_time('a','b','c');
 function a(){};
 function b(){};
 function c(){};
-//echo microtime();//0.14491000 1472448437 true 微妙数  和  秒数 两部分 expload
-echo microtime(true);// 1472448452.1648  //如果有true 参数 返回的是一个部分
+//echo microtime();//0.14491000 1472448437 true 微
+echo microtime(true);// 1472448452.1648  //
 $timeparts = explode(' ',microtime()); 
 var_dump($timeparts);
 
 /*
 
-//var_dump(range(1,20));//返回一个1到20 为键值的数组
+//var_dump(range(1,20));//
 //$arr=range(1,20);
-//shuffle($arr);//将数组打乱洗牌
+//shuffle($arr);//
 //var_dump($arr);
 
 
