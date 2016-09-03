@@ -33,7 +33,7 @@ class consume_time{
 				//echo $x;
 				
 			}
-			
+
 		}
 	   //echo microtime(true)-$time;
 	}
