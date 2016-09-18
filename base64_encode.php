@@ -48,7 +48,11 @@ $replacements=array();
 $replacements[0]='a';
 $replacements[1]='b';
 $replacements[2]='c';
+
 // echo preg_replace($patterns,$replacements,$string);//正则替换 1）待搜索的字符串  2）用来替换的字符 3）被搜索的字符串
+
+
+
  $array = array("23.32","22","12.009","23.43");
  print_r(preg_grep('/^(\d+)?\.\d+$/',$array));
  
