@@ -9,7 +9,7 @@ $time=microtime(true);
 //echo $time;
 
 echo "</br>";
-for($i=5000;$i--;){ //for 循环可以有三个参数，注意也可以有两个 在第二个参数后边加分号 ：：：：：
+for($i=5000;$i--;){ //for 循环可以有三个参数，注意也可以有两个
 
 	//echo $i."</br>";
 	$x = 0;

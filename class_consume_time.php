@@ -50,7 +50,6 @@ $timeparts = explode(' ',microtime());
 var_dump($timeparts);
 
 /*
-
 //var_dump(range(1,20));//
 //$arr=range(1,20);
 //shuffle($arr);//
