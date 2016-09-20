@@ -32,15 +32,20 @@ function get_array($id=0){
 	if($result && mysql_affected_rows()!=0){
 		while($rows=mysql_fetch_assoc($result)){
 			// print_r($rows);
-			echo mysql_affected_rows()."</br>";
+			// echo mysql_affected_rows()."</br>";
 			if($rows['pid']==0){
 				$rows['list']=get_array($rows['id']);
+				foreach($rows['list'] as $k=>$val){
+					 unset($rows['list'][$k]['pid']);
+				}
+				
 			}
 			
 			 $arr[]=$rows;
 		}
-		return $arr;
-	}
+		
 	
+	} 
+	 return $arr;
 }
 print_r(get_array());

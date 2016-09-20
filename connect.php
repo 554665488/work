@@ -6,12 +6,13 @@ $db_name='test';
 $db_port='3306';
 $sqlcon=new mysqli($db_host,$db_user,$db_pwd,$db_name);
 $q="set names utf8";
-$result=$sqlcon->query($q);//ÉèÖÃ±àÂë
+$result=$sqlcon->query($q);//ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½
 if(mysqli_connect_errno()){
 	printf("Connect failed:%s\n",mysqli_connect_errno());
 	exit();
 }
 
 // echo rand(1,time());
-echo rand(10,12);
-$str="55454.jpg";
+// echo rand(10,12);
+// $str="55454.jpg";
+// print_r(pathinfo($str));

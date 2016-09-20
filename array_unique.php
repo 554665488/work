@@ -6,7 +6,7 @@ $arr=array('a'=>100,'a'=>2);
 print_r($arr);
 exit;
 $max=20;
-$arr=range(1,$max,3);//Êý×é×îÐ¡Öµ   ×î´óÖµ ²½½øÖµ
+$arr=range(1,$max,3);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Öµ   ï¿½ï¿½ï¿½Öµ ï¿½ï¿½ï¿½ï¿½Öµ
 
 $arr2=range(1,$max,2);
 $arr=array_merge($arr,$arr2);
@@ -15,7 +15,7 @@ echo "</br>";
 $time=-microtime(true);
 $res1=array_unique($arr);
 $time+=microtime(true);
-// echo count($res1).'Ê±¼ä'.$time;
+// echo count($res1).'Ê±ï¿½ï¿½'.$time;
 echo "</br>";
 $time = -microtime(true); 
     $res2 = array(); 
