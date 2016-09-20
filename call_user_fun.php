@@ -132,8 +132,7 @@ class B{
 }
 call_user_func_array(__NAMESPACE__.'\B::Foo',array('one','two','5555'));
 
-
-call_user_func_array(array(__NAMESPACE__.'\B','Foo'),array('1','2'));//总结：1）在使用 call_user_func_array的时候调用类里边的方法第一参数：：array(对象实例，方法名，array（参数1，参数2））)
+   call_user_func_array(array(__NAMESPACE__.'\B','Foo'),array('1','2'));//总结：1）在使用 call_user_func_array的时候调用类里边的方法第一参数：：array(对象实例，方法名，array（参数1，参数2））)
                                                                      //      2）是用当前的命名空间的时候；参数是两部分  1，参数2））注意是两部分
 																	 //  1被调用的回调函数。2第二个参数是数组，并且为索引数组
 

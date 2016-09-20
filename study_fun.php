@@ -1,6 +1,6 @@
 <?php 
 $str="name=yfl&key=sss";
-parse_str($str,$array);//将url请求的变量字符串解释到变量
+parse_str($str,$array);//将url请求的变量字符串解释到变量数组
 /* echo $name;
 echo $key; */
 //print_r($array);//注：讲字符串解析到变量
