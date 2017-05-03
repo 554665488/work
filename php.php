@@ -14,7 +14,7 @@ function myfunction($v1,$v2){
 $arr=array('a','b','c');
 // print_r(array_reduce($arr,"myfunction"));   //向用户自定义函数发送数组中的值，并返回一个字符串：
 // echo current($arr);
-// echo $dir=getcwd();
+echo $dir=getcwd();  //获取当前工作目录：
 echo realpath('php.php');//D:\phpStudy\WWW\demo\php.php
 echo PHP_EOL;
 echo "ada";
