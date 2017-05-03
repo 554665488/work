@@ -12,7 +12,7 @@ function myfunction($v1,$v2){
 	return $v2.'-'.$v1;
 }
 $arr=array('a','b','c');
-// print_r(array_reduce($arr,"myfunction"));
+// print_r(array_reduce($arr,"myfunction"));   //向用户自定义函数发送数组中的值，并返回一个字符串：
 // echo current($arr);
 // echo $dir=getcwd();
 echo realpath('php.php');//D:\phpStudy\WWW\demo\php.php
